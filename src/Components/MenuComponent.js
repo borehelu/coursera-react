@@ -4,7 +4,7 @@ import { Card, CardImg, CardImgOverlay,
 
     function RenderMenuItem ({dish, onClick}) {
         return (
-            <Card
+            <Card key={dish.id}
                 onClick={() => onClick(dish.id)}>
                 <CardImg width="100%" src={dish.image} alt={dish.name} />
                 <CardImgOverlay>
